@@ -1,0 +1,82 @@
+[
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "pytesseract",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytesseract",
+        "description": "pytesseract",
+        "detail": "pytesseract",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pytesseract.pytesseract.tesseract_cmd",
+        "kind": 5,
+        "importPath": "imgToText",
+        "description": "imgToText",
+        "peekOfCode": "pytesseract.pytesseract.tesseract_cmd = \"C:/Program Files/Tesseract-OCR/tesseract.exe\"\nf = []\nt = []\ninput_dir = r'C:/Users/suhas/Downloads/images/'\nfor root, dirs, filenames in os.walk(input_dir):\n    for filename in filenames:\n        try:\n            print(filename)\n            f.append(filename)\n            img = Image.open(input_dir+ filename)",
+        "detail": "imgToText",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "imgToText",
+        "description": "imgToText",
+        "peekOfCode": "f = []\nt = []\ninput_dir = r'C:/Users/suhas/Downloads/images/'\nfor root, dirs, filenames in os.walk(input_dir):\n    for filename in filenames:\n        try:\n            print(filename)\n            f.append(filename)\n            img = Image.open(input_dir+ filename)\n            text = pytesseract.image_to_string(img, lang = 'eng')",
+        "detail": "imgToText",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "imgToText",
+        "description": "imgToText",
+        "peekOfCode": "t = []\ninput_dir = r'C:/Users/suhas/Downloads/images/'\nfor root, dirs, filenames in os.walk(input_dir):\n    for filename in filenames:\n        try:\n            print(filename)\n            f.append(filename)\n            img = Image.open(input_dir+ filename)\n            text = pytesseract.image_to_string(img, lang = 'eng')\n            t.append(text)",
+        "detail": "imgToText",
+        "documentation": {}
+    },
+    {
+        "label": "input_dir",
+        "kind": 5,
+        "importPath": "imgToText",
+        "description": "imgToText",
+        "peekOfCode": "input_dir = r'C:/Users/suhas/Downloads/images/'\nfor root, dirs, filenames in os.walk(input_dir):\n    for filename in filenames:\n        try:\n            print(filename)\n            f.append(filename)\n            img = Image.open(input_dir+ filename)\n            text = pytesseract.image_to_string(img, lang = 'eng')\n            t.append(text)\n            print(text)",
+        "detail": "imgToText",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "imgToText",
+        "description": "imgToText",
+        "peekOfCode": "df = pd.DataFrame(list(zip(f, t)),columns=['file_Name','Text'])",
+        "detail": "imgToText",
+        "documentation": {}
+    }
+]
