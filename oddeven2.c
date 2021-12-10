@@ -4,17 +4,17 @@ void main(){
     int odds=0,evns=0;
     printf("Enter 6 numbers to sort");
     for (int i=0;i<6;i++){
-        scanf("%d",&num[i]);
+        scanf("%d",&num[i]); // 1 2 3 4 5 6
     }
-    for(int i=0;i<6;i++){ 
+    for(int i=0;i<6;i++){ // 0 1 2 
         if (num[i]%2==0)
         {
-            even[evns]=num[i]; 
-            evns++; 
+            even[evns]=num[i]; //even[0]=2,
+            evns++; // 1 
         }
         else{
-            odd[odds]=num[i]; 
-            odds++;
+            odd[odds]=num[i];  //odd[0]=1; odd[1]=3 
+            odds++; // 1 2 
         }
     }
     
