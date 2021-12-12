@@ -1,5 +1,14 @@
-
 #include <stdio.h>
+void main()
+{
+    int num[10];
+    printf("Enter Ten Numbers : ");
+    for (int i = 0; i < 10; i++){
+        scanf("%d", &num[i]);
+    }
+    printf("Maximum Value is : %d\n", maximum(num));
+    printf("minimum value is : %d",minimum(num));
+}
 int maximum(int num[])
 {
     int max=num[0];
@@ -20,13 +29,4 @@ int minimum(int num[])
     }
     return min;
 }
-void main()
-{
-    int num[10];
-    printf("Enter Ten Numbers : ");
-    for (int i = 0; i < 10; i++){
-        scanf("%d", &num[i]);
-    }
-    printf("Maximum Value is : %d\n", maximum(num));
-    printf("minimum value is : %d",minimum(num));
-}
+
