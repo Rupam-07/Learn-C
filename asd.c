@@ -3,8 +3,8 @@
 void acnd(int ary[]){
 
         
-    for(int i=1;i<5;i++){
-        if(ary[i-1]>ary[i]){ 
+    for(int i=0;i<5;i++){
+        if(ary[i]>ary[i+1]){ 
             printf("Not Accendig");
             return;
         }
@@ -16,6 +16,6 @@ void main(){
     printf("Enter 5 numbers: ");
     for(int i=0;i<5;i++)
         scanf("%d",&ary[i]);
-            
+
     acnd(ary);
 }
